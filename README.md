@@ -1,6 +1,8 @@
 # whatismyip
 Simple webapp that shows the caller's IP information for remote backup et.al.
 
+[![GPL v3.0](https://img.shields.io/github/license/ottlinger/whatismyip.svg)](https://www.gnu.org/licenses/gpl.html)
+
 ## Purpose
 
 This webapp is a little helper to show
