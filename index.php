@@ -15,7 +15,7 @@
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
 echo '<h2>Your IP address is: 🔑 ' . $ip . '</p><h2/>';
-echo '<p>Copy to clipboard <button id="demo" onclick="copyToClipboard(document.getElementById(\'demo\').innerHTML)">' . $ip . '</button></p>';
+echo '<p>Copy to clipboard <button id="whatismyip" onclick="copyToClipboard(document.getElementById(\'whatismyip\').innerHTML)">' . $ip . '</button></p>';
 
 echo '<h2>Your browser is: 🤖 ' . $_SERVER['HTTP_USER_AGENT'] . '</h2>';
 
