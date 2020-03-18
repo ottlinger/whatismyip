@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <meta charset="utf-8">
 <head>
     <title>WhatIsMyIP &mdash; Show me please</title>
