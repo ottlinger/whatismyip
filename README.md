@@ -3,6 +3,8 @@ Simple webapp that shows the caller's IP information for remote backup et.al.
 
 [![GPL v3.0](https://img.shields.io/github/license/ottlinger/whatismyip.svg)](https://www.gnu.org/licenses/gpl.html)
 
+[![StyleCI](https://github.styleci.io/repos/248326026/shield?branch=master)](https://github.styleci.io/repos/248326026?branch=master)
+
 ## Purpose
 
 This webapp is a little helper to show
