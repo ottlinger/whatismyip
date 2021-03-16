@@ -2,20 +2,29 @@
 <html lang="en">
 <meta charset="utf-8">
 <head>
-    <title>WhatIsMyIP &mdash; Show me please</title>
+    <title>WhatIsMyIP &mdash; Show me, please</title>
 </head>
 <body>
 <h1>WhatIsMyIP?</h1>
 
 <script>
-    function copyToClipboard(text) {
-        window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
+    function copyToClipboard(dataTargetId) {
+        var copyText = document.getElementById(dataTargetId);
+
+console.log(copyText.innerText);
+
+        var textArea = document.createElement("textarea");
+        textArea.value = copyText.innerText;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("Copy");
+        textArea.remove();
     }
 </script>
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
-echo '<h2>Your IP address is: 🔑 '.$ip.'</p></h2>';
-echo '<p>Copy to clipboard <button id="whatismyip" onclick="copyToClipboard(document.getElementById(\'whatismyip\').innerHTML)">'.$ip.'</button></p>';
+echo '<h2>Your IP address is: 🔑 <span id=\'ipadr\'>'.$ip.'</span></p></h2>';
+echo '<p><button id="whatismyip" onclick="copyToClipboard(\'ipadr\')">COPY2Clipboard</button></p>';
 
 echo '<h2>Your browser is: 🤖 '.$_SERVER['HTTP_USER_AGENT'].'</h2>';
 
