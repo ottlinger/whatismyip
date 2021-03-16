@@ -10,9 +10,6 @@
 <script>
     function copyToClipboard(dataTargetId) {
         var copyText = document.getElementById(dataTargetId);
-
-console.log(copyText.innerText);
-
         var textArea = document.createElement("textarea");
         textArea.value = copyText.innerText;
         document.body.appendChild(textArea);
