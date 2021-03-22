@@ -19,7 +19,7 @@
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
 echo '<h2>Your IP address is: 🔑 <span id=\'ipadr\'>'.$ip.'</span></h2>';
-echo '<p><button onclick="copyToClipboard()">COPY2Clipboard</button></p>';
+echo '<p><button type="button" onclick="javascript:copyToClipboard()">COPY2Clipboard</button></p>';
 
 echo '<h2>Your browser is: 🤖 '.$_SERVER['HTTP_USER_AGENT'].'</h2>';
 
