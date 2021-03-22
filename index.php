@@ -6,12 +6,10 @@
 </head>
 <body>
 <h1>WhatIsMyIP?</h1>
-
 <script>
-    function copyToClipboard(dataTargetId) {
-        var copyText = document.getElementById(dataTargetId);
+    function copyToClipboard() {
         var textArea = document.createElement("textarea");
-        textArea.value = copyText.innerText;
+        textArea.value = document.getElementById("ipadr").innerText;
         document.body.appendChild(textArea);
         textArea.select();
         document.execCommand("Copy");
@@ -21,7 +19,7 @@
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
 echo '<h2>Your IP address is: 🔑 <span id=\'ipadr\'>'.$ip.'</span></h2>';
-echo '<p><button onclick="copyToClipboard(\'ipadr\')">COPY2Clipboard</button></p>';
+echo '<p><button onclick="copyToClipboard()">COPY2Clipboard</button></p>';
 
 echo '<h2>Your browser is: 🤖 '.$_SERVER['HTTP_USER_AGENT'].'</h2>';
 
