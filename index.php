@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<meta charset="utf-8">
+<meta charset="utf-8"/>
 <head>
     <title>WhatIsMyIP &mdash; Show me, please</title>
 </head>
@@ -20,7 +20,7 @@
 </script>
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
-echo '<h2>Your IP address is: 🔑 <span id=\'ipadr\'>'.$ip.'</span></p></h2>';
+echo '<h2>Your IP address is: 🔑 <span id=\'ipadr\'>'.$ip.'</span></h2>';
 echo '<p><button id="whatismyip" onclick="copyToClipboard(\'ipadr\')">COPY2Clipboard</button></p>';
 
 echo '<h2>Your browser is: 🤖 '.$_SERVER['HTTP_USER_AGENT'].'</h2>';
