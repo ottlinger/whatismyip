@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <meta charset="utf-8"/>
-<head>
-</head>
 <title>WhatIsMyIP &mdash; Show me, please</title>
 <body>
 <h1>WhatIsMyIP?</h1>
