@@ -11,11 +11,10 @@
         console.log(textArea.value);
 
         document.body.appendChild(textArea);
-        textArea.requestFocus();
+        textArea.requestFocusInWindow();
         textArea.select();
         document.execCommand("Copy");
         textArea.remove();
-
     }
 </script>
 <?php
