@@ -11,6 +11,7 @@ This webapp is a little helper to show
 
 * browser information
 * caller's IP address
+* allow to copy&paste its value to the clipboard
 
 in order to start remote sessions or SSH into boxes :)
 
