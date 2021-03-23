@@ -8,12 +8,13 @@
     function copyToClipboard() {
         var textArea = document.createElement("textarea");
         textArea.value = document.getElementById("ipadr").innerText;
+        console.log(textArea.value);
+
         document.body.appendChild(textArea);
         textArea.select();
         document.execCommand("Copy");
         textArea.remove();
 
-        console.log(textArea.value);
     }
 </script>
 <?php
@@ -26,6 +27,5 @@ echo '<h2>Your browser is:</h2><h2> 🤖 '.$_SERVER['HTTP_USER_AGENT'].'</h2>';
 echo '<hr/>';
 echo '<pre>Proudly served by <a href="https://www.github.com/ottlinger/whatismyip" target="_blank">WhatIsMyIP</a> at '.date('Y-m-d H:i:s').'</pre>';
 ?>
-
 </body>
 </html>
