@@ -11,6 +11,7 @@
         console.log(textArea.value);
 
         document.body.appendChild(textArea);
+        textArea.requestFocus();
         textArea.select();
         document.execCommand("Copy");
         textArea.remove();
