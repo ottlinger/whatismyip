@@ -2,6 +2,7 @@
 <html lang="en">
 <meta charset="utf-8"/>
 <title>WhatIsMyIP &mdash; Show me, please</title>
+<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
 <body>
 <h1>WhatIsMyIP?</h1>
 <script>
